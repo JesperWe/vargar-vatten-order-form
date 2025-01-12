@@ -12,7 +12,10 @@
     "@mantine/core": "7.15.3",
     "@mantine/form": "^7.15.3",
     "@mantine/hooks": "7.15.3",
+    "@mantine/notifications": "^7.15.3",
     "@rc-component/qrcode": "^1.0.0",
+    "@sendgrid/mail": "^8.1.4",
+    "@tabler/icons-react": "^3.28.1",
     "next": "15.1.4",
     "react": "19.0.0",
     "react-dom": "19.0.0"
