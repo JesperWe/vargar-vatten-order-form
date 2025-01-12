@@ -127,6 +127,7 @@ export default function HomePage() {
                     <Checkbox
                         mt="md"
                         mb="lg"
+                        fz="sm"
                         label="Jag samtycker till att mina uppgifter sparas. Uppgifterna används endast för att skicka dig din beställning och lämnas inte vidare till någon annan part."
                         key={form.key('termsOfService')}
                         {...form.getInputProps('termsOfService', {type: 'checkbox'})}
@@ -135,7 +136,7 @@ export default function HomePage() {
                         type="submit"
                         disabled={!form.getValues().termsOfService || !form.isValid()}
                         onClick={() => {
-                            setQr(`https://app.swish.nu/1/p/sw/?sw=0762042078&amt=${form.getValues().copies * price}&cur=SEK&msg=${form.getValues().name}&src=qr`)
+                            setQr(`https://app.swish.nu/1/p/sw/?sw=0708761043&amt=${form.getValues().copies * price}&cur=SEK&msg=${'Vargar&Vatten från ' + form.getValues().name}&src=qr`)
                             open()
                         }}
                     >
