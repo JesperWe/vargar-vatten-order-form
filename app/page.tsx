@@ -1,6 +1,6 @@
 'use client'
 
-import {Box, Button, Checkbox, Flex, Group, Modal, NumberInput, rem, TextInput} from '@mantine/core'
+import {Box, Button, Checkbox, Flex, Group, Modal, NumberInput, rem, TextInput, Textarea} from '@mantine/core'
 import {hasLength, isEmail, useForm} from '@mantine/form'
 import {useState} from "react"
 import {QRCodeSVG} from "@rc-component/qrcode"
@@ -114,7 +114,7 @@ export default function HomePage() {
                 </Box>
             </Group>
 
-            <TextInput
+            <Textarea
                 label="Dedikation"
                 placeholder="Om du vill ha boken dedikerad och signerad skriver du dina önskemål här!"
                 key={form.key('comment')}
